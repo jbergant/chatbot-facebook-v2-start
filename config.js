@@ -1,7 +1,7 @@
 module.exports = {
-    FB_PAGE_TOKEN: '',
+    FB_PAGE_TOKEN: 'EAAJ7mr8MuSIBAFP61KQWOUxXwSijnfcxK0BZC182PwbyhlZAkjoHRbYoCmcXO5mbcRiNzmgAdb30V2KsbPOqOIXXtoXrf4x5QEGbZCo9zZChSg6FdhYjqvHrLsPwq1bDZCqN6dmnoJLQHwTtw9Wm8PapTDtIoZBhuvD3pDfCdmsgZDZD',
     FB_VERIFY_TOKEN: '',
-    FB_APP_SECRET: '',
+    FB_APP_SECRET: 'MyFB_Heroku_app',
     SERVER_URL: '',
     GOOGLE_PROJECT_ID: '',
     DF_LANGUAGE_CODE: '',
