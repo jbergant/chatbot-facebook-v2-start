@@ -36,8 +36,6 @@ if (!config.SERVER_URL) { //used for ink to static files
     throw new Error('missing SERVER_URL');
 }
 
-
-
 app.set('port', (process.env.PORT || 5000))
 
 //verify request came from facebook
@@ -56,11 +54,6 @@ app.use(bodyParser.urlencoded({
 // Process application/json
 app.use(bodyParser.json());
 
-
-
-
-
-
 const credentials = {
     client_email: config.GOOGLE_CLIENT_EMAIL,
     private_key: config.GOOGLE_PRIVATE_KEY,
@@ -77,7 +70,7 @@ const sessionClient = new dialogflow.SessionsClient(
 const sessionIds = new Map();
 
 // Index route
-app.get('/', function (req, res) {
+app.get('https://moayyadapp.herokuapp.com/webhook/', function (req, res) {
     res.send('Hello world, I am a chat bot')
 })
 
@@ -138,10 +131,6 @@ app.post('/webhook/', function (req, res) {
         res.sendStatus(200);
     }
 });
-
-
-
-
 
 function receivedMessage(event) {
 
